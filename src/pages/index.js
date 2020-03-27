@@ -1,5 +1,5 @@
 import React from "react"
-import { Link } from "gatsby"
+import { Link, StaticQuery, graphql } from "gatsby"
 
 import Layout from "../components/layout"
 import Image from "../components/image"
@@ -15,6 +15,15 @@ const IndexPage = () => (
       <Image />
     </div>
     <Link to="/page-2/">Go to page 2</Link>
+    <StaticQuery query={graphql`
+      query allProjects {
+        projects {
+          Title
+        }
+      }
+    `} render={data => (<div>
+      <h1>{data.projects.Title}</h1>
+    </div>)}
   </Layout>
 )
 

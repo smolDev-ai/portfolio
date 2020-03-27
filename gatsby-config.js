@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `<Smoldev />`,
+    description: `A portfolio, and blog about my coding journey.`,
+    author: `@_smolDev`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -11,6 +11,18 @@ module.exports = {
       options: {
         name: `images`,
         path: `${__dirname}/src/images`,
+      },
+      {
+      resolve: "gatsby-source-strapi",
+      options: {
+        apiURL: "http://api.smoldev.dev/",
+        contentTypes: [
+          // List of the Content Types you want to be able to request from Gatsby.
+          "pages",
+          "projects",
+          "posts"
+        ],
+        queryLimit: 1000,
       },
     },
     `gatsby-transformer-sharp`,
