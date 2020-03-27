@@ -12,7 +12,8 @@ module.exports = {
         name: `images`,
         path: `${__dirname}/src/images`,
       },
-      {
+    },
+    {
       resolve: "gatsby-source-strapi",
       options: {
         apiURL: "http://api.smoldev.dev/",
@@ -20,7 +21,7 @@ module.exports = {
           // List of the Content Types you want to be able to request from Gatsby.
           "pages",
           "projects",
-          "posts"
+          "posts",
         ],
         queryLimit: 1000,
       },
