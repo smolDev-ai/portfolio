@@ -15,15 +15,26 @@ const IndexPage = () => (
       <Image />
     </div>
     <Link to="/page-2/">Go to page 2</Link>
-    <StaticQuery query={graphql`
-      query allProjects {
-        projects {
-          Title
+
+    <StaticQuery
+      query={graphql`
+        query {
+          allStrapiProjects {
+            edges {
+              node {
+                Title
+                description
+              }
+            }
+          }
         }
+      `}
+      render={data =>
+        data.allStrapiProjects.edges.map(project => {
+          return <div>{project.node.Title}</div>
+        })
       }
-    `} render={data => (<div>
-      <h1>{data.projects.Title}</h1>
-    </div>)}
+    />
   </Layout>
 )
 
