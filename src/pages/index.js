@@ -8,22 +8,21 @@ import SEO from "../components/seo"
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
-    </div>
-    <Link to="/page-2/">Go to page 2</Link>
-
     <StaticQuery
       query={graphql`
         query {
           allStrapiProjects {
             edges {
               node {
-                Title
+                projectTitle
                 description
+                URLs {
+                  github
+                  deployed
+                }
+                technologies {
+                  Tech
+                }
               }
             }
           }
@@ -31,7 +30,22 @@ const IndexPage = () => (
       `}
       render={data =>
         data.allStrapiProjects.edges.map(project => {
-          return <div>{project.node.Title}</div>
+          return (
+            <div>
+              <h2>{project.node.projectTitle}</h2>
+              <p>{project.node.description}</p>
+              <a href={project.node.URLs.github}>{project.node.URLs.github}</a>
+              <br />
+              <a href={project.node.URLs.deployed}>
+                {project.node.URLs.deployed}
+              </a>
+              <ul>
+                {project.node.technologies.map(technology => {
+                  return <li>{technology.Tech}</li>
+                })}
+              </ul>
+            </div>
+          )
         })
       }
     />

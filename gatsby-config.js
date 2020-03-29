@@ -19,7 +19,7 @@ module.exports = {
         apiURL: "http://api.smoldev.dev",
         contentTypes: [
           // List of the Content Types you want to be able to request from Gatsby.
-          "pages",
+          "posts",
           "projects",
         ],
         queryLimit: 1000,

@@ -620,3 +620,25 @@ pre tt:after {
     font-size: 100%;
   }
 }
+
+nav {
+  background-color: whitesmoke;
+}
+
+ul.nav {
+  list-style-type: none;
+  padding: 0.75rem;
+}
+
+ul.nav a,
+ul.nav a:link,
+ul.nav a:visited {
+  text-decoration: none;
+  color: rgb(61, 61, 61);
+}
+
+.logo {
+  padding: 0.35rem;
+  margin: 0.15rem 2rem 0.15rem 7rem;
+  font-size: 2rem;
+}
