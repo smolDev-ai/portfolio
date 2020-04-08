@@ -1,5 +1,6 @@
 import React from "react"
 import { Link, StaticQuery, graphql } from "gatsby"
+import Img from "gatsby-image"
 
 import Layout from "../components/layout"
 import Image from "../components/image"
@@ -23,6 +24,13 @@ const IndexPage = () => (
                 technologies {
                   Tech
                 }
+                image {
+                  childImageSharp {
+                    fluid(maxWidth: 400, maxHeight: 700) {
+                      ...GatsbyImageSharpFluid
+                    }
+                  }
+                }
               }
             }
           }
@@ -31,8 +39,9 @@ const IndexPage = () => (
       render={data =>
         data.allStrapiProjects.edges.map(project => {
           return (
-            <div>
+            <div className="project">
               <h2>{project.node.projectTitle}</h2>
+              <Img fluid={project.node.image.childImageSharp.fluid} />
               <p>{project.node.description}</p>
               <a href={project.node.URLs.github}>{project.node.URLs.github}</a>
               <br />
