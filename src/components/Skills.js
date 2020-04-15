@@ -1,6 +1,8 @@
 import React from "react"
 import "./layout.css"
 import "./bootstrap.css"
+import "./aos.css"
+
 const Skills = () => {
   return (
     <section id="skills" class="services">

@@ -1,6 +1,7 @@
 import React from "react"
 import "./layout.css"
 import "./bootstrap.css"
+import "./aos.css"
 const About = () => {
   return (
     <section id="about" class="about">
