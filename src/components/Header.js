@@ -8,6 +8,11 @@ const Header = ({ siteTitle }) => {
     <header id="header">
       <div className="d-flex flex-column">
         <div className="profile">
+          <img
+            src="http://placehold.it/600x600"
+            alt=""
+            class="img-fluid rounded-circle"
+          />
           <h1 className="text-light">
             <a href="/">Megan Miller</a>
           </h1>
@@ -42,13 +47,13 @@ const Header = ({ siteTitle }) => {
               </a>
             </li>
             <li>
-              <a href="#services">
-                <i class="bx bx-server"></i> Skills
+              <a href="#skills">
+                <i class="bx bx-server"></i> <span>Skills</span>
               </a>
             </li>
             <li>
               <a href="#portfolio">
-                <i class="bx bx-book-content"></i> Portfolio
+                <i class="bx bx-book-content"></i> <span>Portfolio</span>
               </a>
             </li>
             <li>

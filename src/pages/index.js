@@ -6,10 +6,14 @@ import Layout from "../components/layout"
 import Image from "../components/image"
 import SEO from "../components/seo"
 
+import About from "../components/About"
+import Portfolio from "../components/Portfolio"
+import Skills from "../components/Skills"
+
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-    <StaticQuery
+    {/* <StaticQuery
       query={graphql`
         query {
           allStrapiProjects {
@@ -66,7 +70,11 @@ const IndexPage = () => (
           )
         })
       }
-    />
+    /> */}
+
+    <About />
+    <Skills />
+    <Portfolio />
   </Layout>
 )
 
