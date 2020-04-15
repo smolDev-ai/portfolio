@@ -1,6 +1,5 @@
 import React from "react"
 import { Link, useStaticQuery, graphql } from "gatsby"
-import "../../public/assets/vendor/bootstrap/css/bootstrap.css"
 import "./layout.css"
 
 const Header = ({ siteTitle }) => {
