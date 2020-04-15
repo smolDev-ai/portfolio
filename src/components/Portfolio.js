@@ -1,7 +1,7 @@
 import React from "react"
 import "./layout.css"
 import "./bootstrap.css"
-import "./aos.css"
+import "./venobox/venobox.min.css"
 
 const Portfolio = () => {
   return (
