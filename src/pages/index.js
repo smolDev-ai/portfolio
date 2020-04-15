@@ -31,6 +31,9 @@ const IndexPage = () => (
                     }
                   }
                 }
+                Video {
+                  publicURL
+                }
               }
             }
           }
@@ -41,7 +44,13 @@ const IndexPage = () => (
           return (
             <div className="project">
               <h2>{project.node.projectTitle}</h2>
-              <Img fluid={project.node.image.childImageSharp.fluid} />
+              {project.node.Video.publicURL !== null ? (
+                <video controls height="400px" width="300px">
+                  <source src={project.node.Video.publicURL} type="video/mp4" />
+                </video>
+              ) : (
+                <Img fluid={project.node.image.childImageSharp.fluid} />
+              )}
               <p>{project.node.description}</p>
               <a href={project.node.URLs.github}>{project.node.URLs.github}</a>
               <br />
