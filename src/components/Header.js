@@ -1,6 +1,7 @@
 import React from "react"
 import { Link, useStaticQuery, graphql } from "gatsby"
 import "./layout.css"
+import "./bootstrap.css"
 
 const Header = ({ siteTitle }) => {
   return (
@@ -36,7 +37,7 @@ const Header = ({ siteTitle }) => {
         <nav class="nav-menu">
           <ul>
             <li class="active">
-              <a href="index.html">
+              <a href="/">
                 <i class="bx bx-home"></i> <span>Home</span>
               </a>
             </li>

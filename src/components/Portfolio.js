@@ -1,5 +1,6 @@
 import React from "react"
-
+import "./layout.css"
+import "./bootstrap.css"
 const Portfolio = () => {
   return (
     <section id="portfolio" class="portfolio section-bg">

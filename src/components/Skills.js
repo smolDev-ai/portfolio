@@ -1,5 +1,6 @@
 import React from "react"
-
+import "./layout.css"
+import "./bootstrap.css"
 const Skills = () => {
   return (
     <section id="skills" class="services">
