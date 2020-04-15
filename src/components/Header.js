@@ -1,7 +1,7 @@
 import React from "react"
 import { Link, useStaticQuery, graphql } from "gatsby"
-import "./layout.css"
 import "../../public/assets/vendor/bootstrap/css/bootstrap.css"
+import "./layout.css"
 
 const Header = ({ siteTitle }) => {
   return (
@@ -11,7 +11,7 @@ const Header = ({ siteTitle }) => {
           <h1 className="text-light">
             <a href="/">Megan Miller</a>
           </h1>
-          <a className="social-links mt-3 text-center">
+          <div className="social-links mt-3 text-center">
             <a href="#" className="twitter">
               <i className="bx bxl-twitter"></i>
             </a>
@@ -27,7 +27,7 @@ const Header = ({ siteTitle }) => {
             <a href="#" className="linkedin">
               <i className="bx bxl-linkedin"></i>
             </a>
-          </a>
+          </div>
         </div>
         <nav class="nav-menu">
           <ul>
@@ -42,13 +42,13 @@ const Header = ({ siteTitle }) => {
               </a>
             </li>
             <li>
-              <a href="#portfolio">
-                <i class="bx bx-book-content"></i> Portfolio
+              <a href="#services">
+                <i class="bx bx-server"></i> Skills
               </a>
             </li>
             <li>
-              <a href="#services">
-                <i class="bx bx-server"></i> Services
+              <a href="#portfolio">
+                <i class="bx bx-book-content"></i> Portfolio
               </a>
             </li>
             <li>
