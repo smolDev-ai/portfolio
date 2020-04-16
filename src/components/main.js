@@ -196,4 +196,4 @@ import "./jquery.min.js"
     duration: 1000,
     easing: "ease-in-out-back",
   })
-})(jQuery)
+})(jquery)
