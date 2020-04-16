@@ -21,7 +21,8 @@
     "react-dom": "^16.12.0",
     "react-helmet": "^5.2.1",
     "react-markdown": "^4.3.1",
-    "react-moment": "^0.9.7"
+    "react-moment": "^0.9.7",
+    "typed.js": "^2.0.11"
   },
   "devDependencies": {
     "prettier": "^1.19.1"
