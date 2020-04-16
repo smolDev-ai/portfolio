@@ -7,7 +7,7 @@ import "./boxicons/css/boxicons.min.css"
 
 const Header = ({ siteTitle }) => {
   return (
-    <header id="header">
+    <aside id="header">
       <div className="d-flex flex-column">
         <div className="profile">
           <img
@@ -69,7 +69,7 @@ const Header = ({ siteTitle }) => {
           <i class="icofont-navigation-menu"></i>
         </button>
       </div>
-    </header>
+    </aside>
   )
 }
 
