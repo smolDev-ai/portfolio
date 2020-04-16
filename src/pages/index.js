@@ -9,6 +9,7 @@ import SEO from "../components/seo"
 import About from "../components/About"
 import Portfolio from "../components/Portfolio"
 import Skills from "../components/Skills"
+import Hero from "../components/Hero"
 
 const IndexPage = () => (
   <Layout>
@@ -71,7 +72,7 @@ const IndexPage = () => (
         })
       }
     /> */}
-
+    <Hero />
     <About />
     <Skills />
     <Portfolio />
