@@ -4,7 +4,7 @@
  * Author: BootstrapMade.com
  * License: https://bootstrapmade.com/license/
  */
-import "./jquery.js"
+import "./jquery.min.js"
 
 !(function($) {
   "use strict"
