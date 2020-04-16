@@ -2,7 +2,7 @@ import React from "react"
 import { Link, useStaticQuery, graphql } from "gatsby"
 import "./layout.css"
 import "./bootstrap.css"
-import "./boxicons/boxicons.min.css"
+import "./boxicons/css/boxicons.min.css"
 
 const Header = ({ siteTitle }) => {
   return (
