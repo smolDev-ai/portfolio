@@ -1,4 +1,5 @@
 import React from "react"
+import Typed from "react-typed"
 import "./layout.css"
 import "./bootstrap.css"
 
@@ -11,8 +12,14 @@ const Hero = () => {
       <div class="hero-container" data-aos="fade-in">
         <h1>Megan Miller</h1>
         <p>
-          I'm a
-          <span class="typed" data-typed-items="Developer, Freelancer,"></span>
+          I'm a{" "}
+          <Typed
+            strings={["Developer", "Freelancer"]}
+            typeSpeed={40}
+            backSpeed={50}
+            backDelay={2000}
+            loop
+          />
         </p>
       </div>
     </section>
