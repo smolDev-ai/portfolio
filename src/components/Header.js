@@ -1,7 +1,6 @@
 import React from "react"
 import { Link, useStaticQuery, graphql } from "gatsby"
 import "./layout.css"
-import "./main.js"
 import "./bootstrap.css"
 import "./boxicons/css/boxicons.min.css"
 
