@@ -2,8 +2,9 @@ import React from "react"
 import "./layout.css"
 import "./bootstrap.css"
 import "./venobox/venobox.min.css"
+import Img from "gatsby-image"
 
-const Portfolio = () => {
+const Portfolio = props => {
   return (
     <section id="portfolio" class="portfolio section-bg">
       <div class="container">
@@ -17,181 +18,32 @@ const Portfolio = () => {
           </p>
         </div>
 
-        <div
-          class="row portfolio-container"
-          data-aos="fade-up"
-          data-aos-delay="100"
-        >
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-wrap">
-              <img src="http://placehold.it/800x600" class="img-fluid" alt="" />
-              <div class="portfolio-links">
-                <a
-                  href="assets/img/portfolio/portfolio-1.jpg"
-                  data-gall="portfolioGallery"
-                  class="venobox"
-                  title="App 1"
-                >
-                  <i class="bx bx-plus"></i>
-                </a>
-                <a href="portfolio-details.html" title="More Details">
-                  <i class="bx bx-link"></i>
-                </a>
+        <div class="row portfolio-container">
+          {props.images.map(image => {
+            {
+              console.log(image.node.image.childImageSharp.fluid)
+            }
+            return (
+              <div class="col-lg-4 col-md-6 portfolio-item">
+                <div class="portfolio-wrap">
+                  <Img fluid={image.node.image.childImageSharp.fluid} />
+                  <div class="portfolio-links">
+                    <a
+                      href="assets/img/portfolio/portfolio-1.jpg"
+                      data-gall="portfolioGallery"
+                      class="venobox"
+                      title="App 1"
+                    >
+                      <i class="bx bxl-github"></i>
+                    </a>
+                    <a href="portfolio-details.html" title="Deployed">
+                      <i class="bx bx-link"></i>
+                    </a>
+                  </div>
+                </div>
               </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <div class="portfolio-wrap">
-              <img src="http://placehold.it/800x600" class="img-fluid" alt="" />
-              <div class="portfolio-links">
-                <a
-                  href="assets/img/portfolio/portfolio-2.jpg"
-                  data-gall="portfolioGallery"
-                  class="venobox"
-                  title="Web 3"
-                >
-                  <i class="bx bx-plus"></i>
-                </a>
-                <a href="portfolio-details.html" title="More Details">
-                  <i class="bx bx-link"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-wrap">
-              <img src="http://placehold.it/800x600" class="img-fluid" alt="" />
-              <div class="portfolio-links">
-                <a
-                  href="assets/img/portfolio/portfolio-3.jpg"
-                  data-gall="portfolioGallery"
-                  class="venobox"
-                  title="App 2"
-                >
-                  <i class="bx bx-plus"></i>
-                </a>
-                <a href="portfolio-details.html" title="More Details">
-                  <i class="bx bx-link"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <div class="portfolio-wrap">
-              <img src="http://placehold.it/800x600" class="img-fluid" alt="" />
-              <div class="portfolio-links">
-                <a
-                  href="assets/img/portfolio/portfolio-4.jpg"
-                  data-gall="portfolioGallery"
-                  class="venobox"
-                  title="Card 2"
-                >
-                  <i class="bx bx-plus"></i>
-                </a>
-                <a href="portfolio-details.html" title="More Details">
-                  <i class="bx bx-link"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <div class="portfolio-wrap">
-              <img src="http://placehold.it/800x600" class="img-fluid" alt="" />
-              <div class="portfolio-links">
-                <a
-                  href="assets/img/portfolio/portfolio-5.jpg"
-                  data-gall="portfolioGallery"
-                  class="venobox"
-                  title="Web 2"
-                >
-                  <i class="bx bx-plus"></i>
-                </a>
-                <a href="portfolio-details.html" title="More Details">
-                  <i class="bx bx-link"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-wrap">
-              <img src="http://placehold.it/800x600" class="img-fluid" alt="" />
-              <div class="portfolio-links">
-                <a
-                  href="assets/img/portfolio/portfolio-6.jpg"
-                  data-gall="portfolioGallery"
-                  class="venobox"
-                  title="App 3"
-                >
-                  <i class="bx bx-plus"></i>
-                </a>
-                <a href="portfolio-details.html" title="More Details">
-                  <i class="bx bx-link"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <div class="portfolio-wrap">
-              <img src="http://placehold.it/800x600" class="img-fluid" alt="" />
-              <div class="portfolio-links">
-                <a
-                  href="assets/img/portfolio/portfolio-7.jpg"
-                  data-gall="portfolioGallery"
-                  class="venobox"
-                  title="Card 1"
-                >
-                  <i class="bx bx-plus"></i>
-                </a>
-                <a href="portfolio-details.html" title="More Details">
-                  <i class="bx bx-link"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <div class="portfolio-wrap">
-              <img src="http://placehold.it/800x600" class="img-fluid" alt="" />
-              <div class="portfolio-links">
-                <a
-                  href="assets/img/portfolio/portfolio-8.jpg"
-                  data-gall="portfolioGallery"
-                  class="venobox"
-                  title="Card 3"
-                >
-                  <i class="bx bx-plus"></i>
-                </a>
-                <a href="portfolio-details.html" title="More Details">
-                  <i class="bx bx-link"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <div class="portfolio-wrap">
-              <img src="http://placehold.it/800x600" class="img-fluid" alt="" />
-              <div class="portfolio-links">
-                <a
-                  href="assets/img/portfolio/portfolio-9.jpg"
-                  data-gall="portfolioGallery"
-                  class="venobox"
-                  title="Web 3"
-                >
-                  <i class="bx bx-plus"></i>
-                </a>
-                <a href="portfolio-details.html" title="More Details">
-                  <i class="bx bx-link"></i>
-                </a>
-              </div>
-            </div>
-          </div>
+            )
+          })}
         </div>
       </div>
     </section>
