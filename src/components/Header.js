@@ -5,6 +5,10 @@ import "./bootstrap.css"
 import "./boxicons/css/boxicons.min.css"
 
 const Header = ({ siteTitle }) => {
+  const showNav = () => {
+    document.body.classList.toggle("mobile-nav-active")
+  }
+
   return (
     <aside id="header">
       <div className="d-flex flex-column">
@@ -57,14 +61,13 @@ const Header = ({ siteTitle }) => {
                 <i class="bx bx-book-content"></i> <span>Portfolio</span>
               </a>
             </li>
-            <li>
-              <a href="#contact">
-                <i class="bx bx-envelope"></i> Contact
-              </a>
-            </li>
           </ul>
         </nav>
-        <button type="button" class="mobile-nav-toggle d-xl-none">
+        <button
+          type="button"
+          class="mobile-nav-toggle d-xl-none"
+          onClick={() => showNav()}
+        >
           <i class="icofont-navigation-menu"></i>
         </button>
       </div>
