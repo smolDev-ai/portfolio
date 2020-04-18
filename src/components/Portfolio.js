@@ -20,23 +20,15 @@ const Portfolio = props => {
 
         <div class="row portfolio-container">
           {props.images.map(image => {
-            {
-              console.log(image.node.image.childImageSharp.fluid)
-            }
             return (
               <div class="col-lg-4 col-md-6 portfolio-item">
                 <div class="portfolio-wrap">
                   <Img fluid={image.node.image.childImageSharp.fluid} />
                   <div class="portfolio-links">
-                    <a
-                      href="assets/img/portfolio/portfolio-1.jpg"
-                      data-gall="portfolioGallery"
-                      class="venobox"
-                      title="App 1"
-                    >
+                    <a href={image.node.URLs.github} title="Source Code">
                       <i class="bx bxl-github"></i>
                     </a>
-                    <a href="portfolio-details.html" title="Deployed">
+                    <a href={image.node.URLs.deployed} title="Deployed">
                       <i class="bx bx-link"></i>
                     </a>
                   </div>

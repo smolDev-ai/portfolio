@@ -17,6 +17,10 @@ const IndexPage = () => {
       allStrapiProjects {
         edges {
           node {
+            URLs {
+              github
+              deployed
+            }
             image {
               childImageSharp {
                 fluid(maxWidth: 800, maxHeight: 600) {
