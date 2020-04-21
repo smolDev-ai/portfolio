@@ -19,7 +19,12 @@ const About = () => {
 
         <div class="row">
           <div class="col-lg-4" data-aos="fade-right">
-            <img src="../images/headshot.jpg" class="img-fluid" alt="" />
+            <img
+              src="https://i.imgur.com/ZamYjtq.jpg"
+              class="img-fluid"
+              alt=""
+              style={{ width: "600px", height: "600px", objectFit: "contain" }}
+            />
           </div>
           <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
             <h3>UI/UX Designer &amp; Web Developer.</h3>

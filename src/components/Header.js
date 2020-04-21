@@ -14,9 +14,10 @@ const Header = ({ siteTitle }) => {
       <div className="d-flex flex-column">
         <div className="profile">
           <img
-            src="../images/headshot.jpg"
+            src="https://i.imgur.com/ZamYjtq.jpg"
             alt=""
             class="img-fluid rounded-circle"
+            style={{ height: "120px", objectFit: "cover" }}
           />
           <h1 className="text-light">
             <a href="/">Megan Miller</a>
