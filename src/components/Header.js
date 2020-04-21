@@ -14,7 +14,7 @@ const Header = ({ siteTitle }) => {
       <div className="d-flex flex-column">
         <div className="profile">
           <img
-            src="http://placehold.it/600x600"
+            src="../images/headshot.jpg"
             alt=""
             class="img-fluid rounded-circle"
           />
@@ -41,8 +41,8 @@ const Header = ({ siteTitle }) => {
         </div>
         <nav class="nav-menu">
           <ul>
-            <li class="active">
-              <a href="/">
+            <li>
+              <a href="#">
                 <i class="bx bx-home"></i> <span>Home</span>
               </a>
             </li>
