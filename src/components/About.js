@@ -9,12 +9,6 @@ const About = () => {
       <div class="container">
         <div class="section-title">
           <h2>About</h2>
-          <p>
-            Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex
-            aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos
-            quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia
-            fugiat sit in iste officiis commodi quidem hic quas.
-          </p>
         </div>
 
         <div class="row">
@@ -23,65 +17,33 @@ const About = () => {
               src="https://i.imgur.com/ZamYjtq.jpg"
               class="img-fluid"
               alt=""
-              style={{ width: "600px", height: "600px", objectFit: "contain" }}
+              style={{ width: "600px", height: "350px", objectFit: "cover" }}
             />
           </div>
           <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
-            <h3>UI/UX Designer &amp; Web Developer.</h3>
-            <p class="font-italic">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            </p>
-            <div class="row">
-              <div class="col-lg-6">
-                <ul>
-                  <li>
-                    <i class="icofont-rounded-right"></i>{" "}
-                    <strong>Birthday:</strong> 1 May 1995
-                  </li>
-                  <li>
-                    <i class="icofont-rounded-right"></i>{" "}
-                    <strong>Website:</strong> www.example.com
-                  </li>
-                  <li>
-                    <i class="icofont-rounded-right"></i>{" "}
-                    <strong>Phone:</strong> +123 456 7890
-                  </li>
-                  <li>
-                    <i class="icofont-rounded-right"></i> <strong>City:</strong>{" "}
-                    City : New York, USA
-                  </li>
-                </ul>
-              </div>
-              <div class="col-lg-6">
-                <ul>
-                  <li>
-                    <i class="icofont-rounded-right"></i> <strong>Age:</strong>{" "}
-                    30
-                  </li>
-                  <li>
-                    <i class="icofont-rounded-right"></i>{" "}
-                    <strong>Degree:</strong> Master
-                  </li>
-                  <li>
-                    <i class="icofont-rounded-right"></i>{" "}
-                    <strong>PhEmailone:</strong> email@example.com
-                  </li>
-                  <li>
-                    <i class="icofont-rounded-right"></i>{" "}
-                    <strong>Freelance:</strong> Available
-                  </li>
-                </ul>
-              </div>
-            </div>
+            <h3>Full Stack Web Developer</h3>
+
             <p>
-              Officiis eligendi itaque labore et dolorum mollitia officiis optio
-              vero. Quisquam sunt adipisci omnis et ut. Nulla accusantium dolor
-              incidunt officia tempore. Et eius omnis. Cupiditate ut dicta
-              maxime officiis quidem quia. Sed et consectetur qui quia
-              repellendus itaque neque. Aliquid amet quidem ut quaerat
-              cupiditate. Ab et eum qui repellendus omnis culpa magni laudantium
-              dolores.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius quos
+              enim consequatur quisquam maxime cumque? Officia quae cum quia
+              nisi esse, quos possimus tempora maiores doloremque tempore? Qui,
+              sed. Aut, corrupti, iure assumenda laborum voluptatum commodi esse
+              accusantium earum odio ad quod. Ipsa esse iusto impedit ipsum sunt
+              officiis veritatis perferendis reiciendis voluptatem error
+              obcaecati officia provident, libero aut, commodi atque iste
+              tempore. Eveniet, delectus. Ducimus, magnam distinctio rem veniam
+              tempora tenetur non sint aspernatur ad laboriosam, aperiam
+              doloremque ut voluptas quae aliquid incidunt velit temporibus.
+              Saepe eligendi minima, eius ab recusandae ex odio minus, mollitia
+              accusamus aut, vel corrupti?
+            </p>
+            <p>
+              Amet architecto cumque vel voluptates delectus! Provident
+              perferendis repellat debitis vel dolor, quisquam nihil nesciunt
+              molestiae ex, commodi, quo eos repudiandae deleniti? Eligendi
+              minus similique ipsam tempore, iusto quas. Aspernatur itaque,
+              officiis cum impedit perferendis enim illum ullam tenetur delectus
+              exercitationem deserunt explicabo doloremque id quas esse?
             </p>
           </div>
         </div>

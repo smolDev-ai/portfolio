@@ -1,7 +1,7 @@
 import React from "react"
 import "./layout.css"
 import "./bootstrap.css"
-import "./icofont/icofont.min.css"
+import "./boxicons/css/boxicons.min.css"
 
 const Skills = () => {
   return (
@@ -9,18 +9,12 @@ const Skills = () => {
       <div class="container">
         <div class="section-title">
           <h2>Skills</h2>
-          <p>
-            Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex
-            aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos
-            quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia
-            fugiat sit in iste officiis commodi quidem hic quas.
-          </p>
         </div>
 
         <div class="row">
           <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up">
             <div class="icon">
-              <i class="icofont-computer"></i>
+              <i class="bx bxl-html5"></i>
             </div>
             <h4 class="title">
               <a href="">Lorem Ipsum</a>
@@ -30,13 +24,9 @@ const Skills = () => {
               excepturi sint occaecati cupiditate non provident
             </p>
           </div>
-          <div
-            class="col-lg-4 col-md-6 icon-box"
-            data-aos="fade-up"
-            data-aos-delay="100"
-          >
+          <div class="col-lg-4 col-md-6 icon-box" data-aos-delay="100">
             <div class="icon">
-              <i class="icofont-chart-bar-graph"></i>
+              <i class="bx bxl-css3"></i>
             </div>
             <h4 class="title">
               <a href="">Dolor Sitema</a>
@@ -52,7 +42,7 @@ const Skills = () => {
             data-aos-delay="200"
           >
             <div class="icon">
-              <i class="icofont-earth"></i>
+              <i class="bx bxl-javascript"></i>
             </div>
             <h4 class="title">
               <a href="">Sed ut perspiciatis</a>
@@ -68,7 +58,7 @@ const Skills = () => {
             data-aos-delay="300"
           >
             <div class="icon">
-              <i class="icofont-image"></i>
+              <i class="bx bxl-react"></i>
             </div>
             <h4 class="title">
               <a href="">Magni Dolores</a>
@@ -84,7 +74,7 @@ const Skills = () => {
             data-aos-delay="400"
           >
             <div class="icon">
-              <i class="icofont-settings"></i>
+              <i class="bx bxl-redux"></i>
             </div>
             <h4 class="title">
               <a href="">Nemo Enim</a>
@@ -100,7 +90,7 @@ const Skills = () => {
             data-aos-delay="500"
           >
             <div class="icon">
-              <i class="icofont-tasks-alt"></i>
+              <i class="bx bxl-nodejs"></i>
             </div>
             <h4 class="title">
               <a href="">Eiusmod Tempor</a>
