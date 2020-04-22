@@ -77,11 +77,17 @@ const Project = ({ data }) => {
           <div class="portfolio-description">
             <h3>{project.projectTitle}</h3>
             <p style={{ width: "78%" }}>{project.description}</p>
-            <ul>
-              {project.technologies.map(tech => {
-                return <li class="col-sm-2 col-lg-6 col-md-4">{tech.Tech}</li>
-              })}
-            </ul>
+            <h2>Technologies</h2>
+            {project.technologies.map(tech => {
+              return (
+                <div
+                  style={{ display: "inline", margin: "0 auto" }}
+                  className="col-sm-2 col-lg-6 col-md-4"
+                >
+                  {tech.Tech}
+                </div>
+              )
+            })}
           </div>
         </div>
       </section>
