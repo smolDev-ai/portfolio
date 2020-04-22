@@ -16,25 +16,13 @@ const Skills = () => {
             <div class="icon">
               <i class="bx bxl-html5"></i>
             </div>
-            <h4 class="title">
-              <a href="">Lorem Ipsum</a>
-            </h4>
-            <p class="description">
-              Voluptatum deleniti atque corrupti quos dolores et quas molestias
-              excepturi sint occaecati cupiditate non provident
-            </p>
+            <h4 class="title">HTML5</h4>
           </div>
           <div class="col-lg-4 col-md-6 icon-box" data-aos-delay="100">
             <div class="icon">
               <i class="bx bxl-css3"></i>
             </div>
-            <h4 class="title">
-              <a href="">Dolor Sitema</a>
-            </h4>
-            <p class="description">
-              Minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-              aliquip ex ea commodo consequat tarad limino ata
-            </p>
+            <h4 class="title">CSS3</h4>
           </div>
           <div
             class="col-lg-4 col-md-6 icon-box"
@@ -44,13 +32,7 @@ const Skills = () => {
             <div class="icon">
               <i class="bx bxl-javascript"></i>
             </div>
-            <h4 class="title">
-              <a href="">Sed ut perspiciatis</a>
-            </h4>
-            <p class="description">
-              Duis aute irure dolor in reprehenderit in voluptate velit esse
-              cillum dolore eu fugiat nulla pariatur
-            </p>
+            <h4 class="title">JavaScript</h4>
           </div>
           <div
             class="col-lg-4 col-md-6 icon-box"
@@ -60,13 +42,7 @@ const Skills = () => {
             <div class="icon">
               <i class="bx bxl-react"></i>
             </div>
-            <h4 class="title">
-              <a href="">Magni Dolores</a>
-            </h4>
-            <p class="description">
-              Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-              officia deserunt mollit anim id est laborum
-            </p>
+            <h4 class="title">React</h4>
           </div>
           <div
             class="col-lg-4 col-md-6 icon-box"
@@ -76,13 +52,7 @@ const Skills = () => {
             <div class="icon">
               <i class="bx bxl-redux"></i>
             </div>
-            <h4 class="title">
-              <a href="">Nemo Enim</a>
-            </h4>
-            <p class="description">
-              At vero eos et accusamus et iusto odio dignissimos ducimus qui
-              blanditiis praesentium voluptatum deleniti atque
-            </p>
+            <h4 class="title">Redux</h4>
           </div>
           <div
             class="col-lg-4 col-md-6 icon-box"
@@ -92,13 +62,7 @@ const Skills = () => {
             <div class="icon">
               <i class="bx bxl-nodejs"></i>
             </div>
-            <h4 class="title">
-              <a href="">Eiusmod Tempor</a>
-            </h4>
-            <p class="description">
-              Et harum quidem rerum facilis est et expedita distinctio. Nam
-              libero tempore, cum soluta nobis est eligendi
-            </p>
+            <h4 class="title">NodeJS</h4>
           </div>
         </div>
       </div>

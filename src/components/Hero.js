@@ -9,7 +9,7 @@ const Hero = () => {
       id="hero"
       class="d-flex flex-column justify-content-center align-items-center"
     >
-      <div class="hero-container" data-aos="fade-in">
+      <div class="hero-container">
         <h1>Megan Miller</h1>
         <p>
           I'm a{" "}
