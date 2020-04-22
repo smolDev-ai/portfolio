@@ -1,7 +1,7 @@
 import React from "react"
 import { graphql, Link } from "gatsby"
 
-import Layout from "/src/components/Layout"
+import Layout from "../components/layout"
 import Img from "gatsby-image"
 
 export const query = graphql`
@@ -28,7 +28,6 @@ export const query = graphql`
 `
 
 const Project = ({ data }) => {
-  console.log(data)
   const project = data.strapiProjects
   return (
     <Layout>
