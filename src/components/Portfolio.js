@@ -2,7 +2,8 @@ import React from "react"
 import "./layout.css"
 import "./bootstrap.css"
 import "./venobox/venobox.min.css"
-import Img from "gatsby-image"
+import { Link } from "gatsby"
+import Img from "gatsby-image/"
 
 const Portfolio = props => {
   return (
@@ -17,13 +18,22 @@ const Portfolio = props => {
             return (
               <div class="col-lg-4 col-md-6 portfolio-item">
                 <div class="portfolio-wrap">
-                  <Img fluid={image.node.image.childImageSharp.fluid} />
+                  <Img
+                    fluid={image.node.image.childImageSharp.fluid}
+                    imgStyle={{
+                      objectFit: "cover",
+                      objectPosition: "50% 50%",
+                    }}
+                  />
                   <div class="portfolio-links">
                     <a href={image.node.URLs.github} title="Source Code">
                       <i class="bx bxl-github"></i>
                     </a>
-                    <a href={image.node.URLs.deployed} title="Deployed">
+                    <Link to={`project/${image.node.strapiId}`}>
                       <i class="bx bx-link"></i>
+                    </Link>
+                    <a href={image.node.URLs.deployed} title="Deployed">
+                      <i class="bx bx-link-external"></i>
                     </a>
                   </div>
                 </div>

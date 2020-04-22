@@ -14,7 +14,7 @@ const Hero = () => {
         <p>
           I'm a{" "}
           <Typed
-            strings={["Developer", "Freelancer"]}
+            strings={["Fullstack Web Developer", "Freelancer"]}
             typeSpeed={40}
             backSpeed={50}
             backDelay={2000}

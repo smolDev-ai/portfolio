@@ -17,6 +17,7 @@ const IndexPage = () => {
       allStrapiProjects {
         edges {
           node {
+            strapiId
             URLs {
               github
               deployed
