@@ -26,15 +26,15 @@ const Portfolio = props => {
                     }}
                   />
                   <div class="portfolio-links">
-                    <Link to={image.node.URLs.github} title="Source Code">
+                    <a href={image.node.URLs.github} title="Source Code">
                       <i class="bx bxl-github"></i>
-                    </Link>
+                    </a>
                     <Link to={`project/${image.node.strapiId}`}>
                       <i class="bx bx-link"></i>
                     </Link>
-                    <Link to={image.node.URLs.deployed} title="Deployed">
+                    <a href={image.node.URLs.deployed} title="Deployed">
                       <i class="bx bx-link-external"></i>
-                    </Link>
+                    </a>
                   </div>
                 </div>
               </div>
