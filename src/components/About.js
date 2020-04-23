@@ -24,15 +24,15 @@ const About = () => {
             <h3>Fullstack Web Developer</h3>
             <p>
               I've been coding since 2012. I've always had a passion for
-              learning new things, and code was something that I immedialey grew
-              to love because it's a field that never stops growing. I attended
-              and completed <a href="lambdaschool.com">Lambda School</a> as a
-              stepping stone to achieve my dream of becoming a Fullstack Web
-              Developer. During my time at Lambda I gained experience in working
-              with a wide range of technology including but not limited to
-              JavaScript, React, Redux, Node/Express, Python, Flask, Django,
-              GraphQL, HTML & CSS, CSS Preprocessors, Jest, and React Testing
-              Library.
+              learning new things, and code was something that I immediately
+              grew to love because it's a field that never stops growing. I
+              attended and completed{" "}
+              <a href="lambdaschool.com">Lambda School</a> as a stepping stone
+              to achieve my dream of becoming a Fullstack Web Developer. During
+              my time at Lambda I gained experience in working with a wide range
+              of technology including but not limited to JavaScript, React,
+              Redux, Node/Express, Python, Flask, Django, GraphQL, HTML & CSS,
+              CSS Preprocessors, Jest, and React Testing Library.
             </p>
           </div>
         </div>
