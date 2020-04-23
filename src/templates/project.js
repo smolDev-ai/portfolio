@@ -2,7 +2,6 @@ import React from "react"
 import { graphql, Link } from "gatsby"
 
 import Layout from "../components/layout"
-import Img from "gatsby-image"
 
 import "../components/bootstrap.css"
 
@@ -13,6 +12,9 @@ import knexIcon from "@iconify/icons-logos/knex"
 import nodejsIcon from "@iconify/icons-logos/nodejs-icon"
 import expressIcon from "@iconify/icons-logos/express"
 import reduxIcon from "@iconify/icons-logos/redux"
+import javascriptIcon from "@iconify/icons-logos/javascript"
+import html5Icon from "@iconify/icons-simple-icons/html5"
+import css3Icon from "@iconify/icons-simple-icons/css3"
 
 export const query = graphql`
   query ProjectQuery($id: Int!) {
@@ -118,6 +120,23 @@ const Project = ({ data }) => {
                     {tech.Tech.includes("Postgres") ? (
                       <span>
                         <Icon width="3em" icon={postgresqlIcon} /> {tech.Tech}
+                      </span>
+                    ) : null}
+                    {tech.Tech.includes("JavaScript") ? (
+                      <span>
+                        <Icon width="3em" icon={javascriptIcon} /> {tech.Tech}
+                      </span>
+                    ) : null}
+                    {tech.Tech.includes("HTML5") ? (
+                      <span>
+                        <Icon color="#E44D26" width="3em" icon={html5Icon} />{" "}
+                        {tech.Tech}
+                      </span>
+                    ) : null}
+                    {tech.Tech.includes("CSS3") ? (
+                      <span>
+                        <Icon color="#2965f1" width="3em" icon={css3Icon} />{" "}
+                        {tech.Tech}
                       </span>
                     ) : null}
                   </div>

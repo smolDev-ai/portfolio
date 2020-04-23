@@ -622,7 +622,7 @@ section {
   border: 1px solid #149ddd;
 }
 
-.services .icon i {
+.services .icon {
   color: #fff;
   font-size: 24px;
 }
@@ -631,13 +631,13 @@ section {
   background: #fff;
 }
 
-.services .icon-box:hover .icon i {
+.services .icon-box:hover .icon {
   color: #149ddd;
 }
 
 .services .title {
   margin-left: 80px;
-  margin-top: 1rem;
+  /* margin-top: 1rem; */
   font-weight: 700;
   font-size: 18px;
 }
