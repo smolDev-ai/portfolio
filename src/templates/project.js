@@ -4,7 +4,9 @@ import { graphql, Link } from "gatsby"
 import Layout from "../components/layout"
 import Img from "gatsby-image"
 
-import { Icon, InlineIcon } from "@iconify/react"
+import "../components/bootstrap.css"
+
+import { Icon } from "@iconify/react"
 import postgresqlIcon from "@iconify/icons-logos/postgresql"
 import reactIcon from "@iconify/icons-logos/react"
 import knexIcon from "@iconify/icons-logos/knex"
@@ -46,7 +48,6 @@ const Project = ({ data }) => {
       <section id="breadcrumbs" class="breadcrumbs">
         <div class="container">
           <div class="d-flex justify-content-between align-items-center">
-            <h2>Project Details</h2>
             <ol>
               <li>
                 <Link to="/">Home</Link>
@@ -81,33 +82,47 @@ const Project = ({ data }) => {
             <h3>{project.projectTitle}</h3>
             <p style={{ width: "78%" }}>{project.description}</p>
             <h2>Technologies</h2>
-            {project.technologies.map(tech => {
-              return (
-                <div
-                  style={{ display: "inline", margin: "0 auto" }}
-                  className="col-sm-2 col-lg-6 col-md-4"
-                >
-                  {tech.Tech === "reactIcon" ? (
-                    <Icon width="3em" icon={reactIcon} />
-                  ) : null}
-                  {tech.Tech === "expressIcon" ? (
-                    <Icon width="3em" icon={expressIcon} />
-                  ) : null}
-                  {tech.Tech === "reduxIcon" ? (
-                    <Icon width="3em" icon={reduxIcon} />
-                  ) : null}
-                  {tech.Tech === "nodejsIcon" ? (
-                    <Icon width="3em" icon={nodejsIcon} />
-                  ) : null}
-                  {tech.Tech === "knexIcon" ? (
-                    <Icon width="3em" icon={knexIcon} />
-                  ) : null}
-                  {tech.Tech === "postgresqlIcon" ? (
-                    <Icon width="3em" icon={postgresqlIcon} />
-                  ) : null}
-                </div>
-              )
-            })}
+            <div className="row">
+              {project.technologies.map(tech => {
+                return (
+                  <div
+                    style={{ display: "inline-block" }}
+                    className="col-lg-6 col-md-6"
+                  >
+                    {tech.Tech.includes("React") ? (
+                      <span>
+                        <Icon width="3em" icon={reactIcon} /> {tech.Tech}
+                      </span>
+                    ) : null}
+                    {tech.Tech.includes("Express") ? (
+                      <span>
+                        <Icon width="3em" icon={expressIcon} /> {tech.Tech}
+                      </span>
+                    ) : null}
+                    {tech.Tech.includes("Redux") ? (
+                      <span>
+                        <Icon width="3em" icon={reduxIcon} /> {tech.Tech}
+                      </span>
+                    ) : null}
+                    {tech.Tech.includes("Node") ? (
+                      <span>
+                        <Icon width="3em" icon={nodejsIcon} /> {tech.Tech}
+                      </span>
+                    ) : null}
+                    {tech.Tech.includes("Knex") ? (
+                      <span>
+                        <Icon width="3em" icon={knexIcon} /> {tech.Tech}
+                      </span>
+                    ) : null}
+                    {tech.Tech.includes("Postgres") ? (
+                      <span>
+                        <Icon width="3em" icon={postgresqlIcon} /> {tech.Tech}
+                      </span>
+                    ) : null}
+                  </div>
+                )
+              })}
+            </div>
             {project.Video ? (
               <div style={{ paddingTop: "1em" }}>
                 <h2>Demo</h2>
