@@ -2,6 +2,7 @@ import React from "react"
 import Typed from "react-typed"
 import "./layout.css"
 import "./bootstrap.css"
+import { Link } from "gatsby"
 
 const Hero = () => {
   return (
