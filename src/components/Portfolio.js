@@ -12,7 +12,7 @@ const Portfolio = props => {
         <div class="section-title">
           <h2>Portfolio</h2>
           <p>
-            click the <i class="bx bx-plus"></i> icon to learn more about a
+            Click the <i class="bx bx-plus"></i> icon to learn more about a
             project.
           </p>
         </div>
