@@ -23,19 +23,35 @@ const Header = ({ siteTitle }) => {
             <Link to="/">Megan Miller</Link>
           </h1>
           <div className="social-links mt-3 text-center">
-            <a href="#" className="twitter" alt="twitter">
+            <a
+              href="https://twitter.com/_smolDev"
+              className="twitter"
+              alt="twitter"
+            >
               <i className="bx bxl-twitter"></i>
             </a>
-            <a href="#" className="facebook" alt="medium">
+            <a
+              href="https://medium.com/@megan.l.miller264"
+              className="facebook"
+              alt="medium"
+            >
               <i className="bx bxl-medium"></i>
             </a>
-            <a href="#" className="instagram" alt="dev-to">
+            <a href="https://dev.to/smoldev" className="instagram" alt="dev-to">
               <i className="bx bxl-dev-to"></i>
             </a>
-            <a href="#" className="google-plus" alt="github">
+            <a
+              href="https://github.com/smolDev-ai"
+              className="google-plus"
+              alt="github"
+            >
               <i className="bx bxl-github"></i>
             </a>
-            <a href="#" className="linkedin" alt="linkedin">
+            <a
+              href="https://www.linkedin.com/in/megan-l-miller/"
+              className="linkedin"
+              alt="linkedin"
+            >
               <i className="bx bxl-linkedin"></i>
             </a>
           </div>
