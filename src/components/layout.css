@@ -232,7 +232,7 @@ h6 {
 
 #hero:before {
   content: "";
-  background: rgba(5, 13, 24, 0.3);
+  background: rgba(5, 13, 24, 0.4);
   position: absolute;
   bottom: 0;
   top: 0;
@@ -260,6 +260,14 @@ h6 {
   margin-bottom: 50px;
   font-size: 26px;
   font-family: "Poppins", sans-serif;
+}
+
+.down {
+  text-align: center;
+}
+
+.down a {
+  color: inherit;
 }
 
 #hero p span {

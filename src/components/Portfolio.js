@@ -11,6 +11,10 @@ const Portfolio = props => {
       <div class="container">
         <div class="section-title">
           <h2>Portfolio</h2>
+          <p>
+            click the <i class="bx bx-plus"></i> icon to learn more about a
+            project.
+          </p>
         </div>
 
         <div class="row portfolio-container">

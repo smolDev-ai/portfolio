@@ -22,6 +22,11 @@ const Hero = () => {
             loop
           />
         </p>
+        <p class="down">
+          <Link to="#about">
+            <i class="bx bx-down-arrow"></i>
+          </Link>
+        </p>
       </div>
     </section>
   )
