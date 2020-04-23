@@ -21,11 +21,7 @@ export const query = graphql`
       projectTitle
       description
       image {
-        childImageSharp {
-          fluid(maxWidth: 800, maxHeight: 600) {
-            ...GatsbyImageSharpFluid
-          }
-        }
+        publicURL
       }
       URLs {
         github
@@ -60,7 +56,12 @@ const Project = ({ data }) => {
       <section id="portfolio-details" class="portfolio-details">
         <div class="container">
           <div class="portfolio-details-container">
-            <Img fluid={project.image.childImageSharp.fluid} />
+            <img
+              src={project.image.publicURL}
+              width="100%"
+              height="500px"
+              style={{ objectFit: "contain" }}
+            />
             <div class="portfolio-info">
               <h3>{project.projectTitle}</h3>
               <ul>
