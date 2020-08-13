@@ -27,7 +27,7 @@ const About = () => {
               learning new things, and code was something that I immediately
               grew to love because it's a field that never stops growing. I
               attended and completed{" "}
-              <a href="https://lambdaschool.com/">Lambda School</a> as a stepping stone
+              <a href="https://lambdaschool.com/" target="_blank">Lambda School</a> as a stepping stone
               to achieve my dream of becoming a Fullstack Web Developer. During
               my time at Lambda I gained experience in working with a wide range
               of technology including but not limited to JavaScript, React,
